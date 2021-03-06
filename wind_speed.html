@@ -1,0 +1,160 @@
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css"
+        integrity="sha384-enpDwFISL6M3ZGZ50Tjo8m65q06uLVnyvkFO3rsoW0UC15ATBFz3QEhr3hmxpYsn" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>
+
+    <meta charset="utf-8">
+    <title>Temperature Analysis </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        #main-bio {
+            float: left;
+            width: 70%;
+        }
+
+        #contact-info {
+            float: left;
+            width: 40%;
+        }
+
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+
+
+</head>
+
+
+<body class="page-bootswatch" data-new-gr-c-s-check-loaded="14.997.0" data-gr-ext-installed>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+
+        <a class="navbar-brand" href="index.html">
+            Temperature Analysis
+        </a>
+    
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav"
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="navbar-collapse collapse" id="main-nav">
+    
+            <ul class="nav navbar-nav ml-xl-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+    
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownRight" href="#"
+                        data-toggle="dropdown" role="button"  aria-expanded="false">Plots</a>
+    
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownRight">
+    
+                        <li class="dropdown-item">
+                            <a class="nav-link" href="max_temp.html">
+                                Max Temperature
+                            </a>
+                        </li>
+    
+                        <li class="dropdown-item">
+                            <a class="nav-link" href="humidity.html">
+                                Humidity
+                            </a>
+                        </li>
+    
+                        <li class="dropdown-item">
+                            <a class="nav-link" href="cloudiness.html">
+                                Cloudiness
+                            </a>
+                        </li>
+    
+                        <li class="dropdown-item">
+                            <a class="nav-link" href="wind_speed.html">
+                                Wind Speed
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container" id="main-bio">
+            <div class="jumbotron text-center">
+                <h1 class="display-5">Wind Speed</h1>
+                <a href="wind_speed.html">    
+                    <img src="city_latitude_vs_wind_speed.png">
+                </a>
+                <p class="lead"> The data analyzed shows that the closer cities are to the poles, the lower the maximum temperature gets. Maximum temperatures of cities near the poles tend to vary more compared to the cities near the equator.</p>
+            </div>
+        </section>
+
+        <aside id="vis">
+            <div class="card mb-3">
+                <h3 class="card-header">Visualizations</h3>
+                <div class="card-body">
+                <h5 class="card-title">These are the graphs that were created from the data set.</h5>
+                <h6 class="card-subtitle text-muted">Click on the graph to get an in-depth analysis.</h6> 
+                </div>   
+                <ul class="list-group list-group-flush">
+                    
+                    <li class="list-group-item">Latitude vs. Max Temperature</li>
+                    
+                    <li class="list-group-item">
+                        <a href="max_temp.html">
+                            <img src="city_latitude_vs_temp.png">
+                        </a>
+                    </li>
+
+                    <li class="list-group-item">Latitude vs. Cloudiness</li>
+
+                    <li class="list-group-item">
+                        <a href="cloudiness.html">
+                            <img src="city_latitude_vs_cloudiness.png">
+                        </a>
+                    </li>
+
+                    <li class="list-group-item">Latitude vs. Humidity</li>
+
+                    <li class="list-group-item">
+                        <a href="humidity.html">
+                            <img src="city_latitude_vs_humidity.png">
+                        </a>
+                    </li>
+
+                    <li class="list-group-item">Latitude vs. Wind Speed</li>
+
+                    <li class="list-group-item">
+                        <a href="wind_speed.html">
+                            <img src="city_latitude_vs_wind_speed.png">
+                        </a>
+                    </li>
+                
+                </ul>
+            </div>
+        </aside>
+
+    </main>
+
+</body>
