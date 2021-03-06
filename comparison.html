@@ -17,17 +17,17 @@
 
     <style>
         #main-bio {
-            float: left;
-            width: 70%;
+        
+            width: 100%;
         }
 
-        #contact-info {
+        #vis {
             float: left;
             width: 40%;
         }
 
         .container {
-            width: 1024px;
+            width: 100%;
             margin: 0 auto;
         }
 
@@ -39,21 +39,20 @@
 
 </head>
 
-
 <body class="page-bootswatch" data-new-gr-c-s-check-loaded="14.997.0" data-gr-ext-installed>
     <nav class="navbar navbar-expand-xl navbar-light bg-light">
 
         <a class="navbar-brand" href="index.html">
             Temperature Analysis
         </a>
-    
+
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav"
             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <div class="navbar-collapse collapse" id="main-nav">
-    
+
             <ul class="nav navbar-nav ml-xl-5">
                 <li class="nav-item">
                     <a class="nav-link" href="comparison.html">Comparison</a>
@@ -62,32 +61,32 @@
                     <a class="nav-link" href="data.html">Data</a>
                 </li>
             </ul>
-    
+
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownRight" href="#"
                         data-toggle="dropdown" role="button"  aria-expanded="false">Plots</a>
-    
+
                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownRight">
-    
+
                         <li class="dropdown-item">
                             <a class="nav-link" href="max_temp.html">
                                 Max Temperature
                             </a>
                         </li>
-    
+
                         <li class="dropdown-item">
                             <a class="nav-link" href="humidity.html">
                                 Humidity
                             </a>
                         </li>
-    
+
                         <li class="dropdown-item">
                             <a class="nav-link" href="cloudiness.html">
                                 Cloudiness
                             </a>
                         </li>
-    
+
                         <li class="dropdown-item">
                             <a class="nav-link" href="wind_speed.html">
                                 Wind Speed
@@ -101,53 +100,37 @@
 
     <main>
         <section class="container" id="main-bio">
-            <div class="jumbotron text-center">
-                <h1 class="display-5">Wind Speed</h1>
+            <div class="jumbotron text-center" style="height: 90%;">
+                <h1 class="display-5">Comparison: Latitude vs X</h1>
                 <hr>
-                <a href="wind_speed.html">    
-                    <img src="city_latitude_vs_wind_speed.png">
-                </a>
-                <p class="lead" style="color: black;"> Wind speed seems to be evenly distributed between North and South poles.</p>
-            </div>
-        </section>
-
-        <aside id="vis">
-            <div class="card mb-3">
-                <h3 class="card-header">Visualizations</h3>
-                <div class="card-body">
-                <h5 class="card-title">These are the rest of the graphs.</h5>
-                <h6 class="card-subtitle text-muted">Click on the graph to get an in-depth analysis.</h6> 
-                </div>   
-                <ul class="list-group list-group-flush">
-                    
-                    <li class="list-group-item">Latitude vs. Max Temperature</li>
-                    
-                    <li class="list-group-item">
-                        <a href="max_temp.html">
+                <p class="lead">Click any plot to get an in-depth analysis.</p>
+                <div class="container">
+                    <div class="row">
+                      <div class="col">vs. Max Temperature
+                        <a href="max_temp.html">    
                             <img src="city_latitude_vs_temp.png">
                         </a>
-                    </li>
-
-                    <li class="list-group-item">Latitude vs. Cloudiness</li>
-
-                    <li class="list-group-item">
-                        <a href="cloudiness.html">
-                            <img src="city_latitude_vs_cloudiness.png">
-                        </a>
-                    </li>
-
-                    <li class="list-group-item">Latitude vs. Humidity</li>
-
-                    <li class="list-group-item">
+                      </div>
+                      <div class="col">vs. Humidity
                         <a href="humidity.html">
                             <img src="city_latitude_vs_humidity.png">
                         </a>
-                    </li>
-                
-                </ul>
-            </div>
-        </aside>
+                      </div>
+                      <div class="w-100"></div>
+                      <div class="col">vs. Cloudiness
+                        <a href="cloudiness.html">
+                            <img src="city_latitude_vs_cloudiness.png">
+                        </a>
+                      </div>
+                      <div class="col">vs. Wind Speed
+                        <a href="wind_speed.html">
+                            <img src="city_latitude_vs_wind_speed.png">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+             </div>   
+        </section>
 
-    </main>
 
 </body>
