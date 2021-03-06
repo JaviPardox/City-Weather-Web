@@ -21,7 +21,7 @@
             width: 70%;
         }
 
-        #contact-info {
+        #vis {
             float: left;
             width: 40%;
         }
@@ -30,134 +30,132 @@
             width: 1024px;
             margin: 0 auto;
         }
+
+        img {
+            max-width: 100%;
+        }
     </style>
 
 
 </head>
 
-<body class="page-bootswatch" data-new-gr-c-s-check-loaded="14.997.0" data-gr-ext-installed></body>
-<nav class="navbar navbar-expand-xl navbar-light bg-light">
+<body class="page-bootswatch" data-new-gr-c-s-check-loaded="14.997.0" data-gr-ext-installed>
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
 
-    <a class="navbar-brand" href="/?theme=6">
-        Temperature Analysis
-    </a>
+        <a class="navbar-brand" href="index.html">
+            Temperature Analysis
+        </a>
 
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav"
-        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav"
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="navbar-collapse collapse" id="main-nav" style="">
+        <div class="navbar-collapse collapse" id="main-nav">
 
-        <ul class="nav navbar-nav ml-xl-5">
-            <li class="nav-item">
-                <a class="nav-link" href="comparison.html">Comparison</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
-            </li>
-        </ul>
-
-        <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-dropdown nav-link dropdown-toggle" id="navbarDropdownRight" href="#"
-                    data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
-
-                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownRight">
-
-                    <li class="dropdown-item">
-                        <a class="nav-link" href="max_temp.html" data-ga-category="Navigation"
-                            data-ga-action="Resources" data-ga-label="GitHub project" rel="noopener nofollow"
-                            target="_blank">Max Temperature
-                        </a>
-                    </li>
-
-                    <li class="dropdown-item">
-                        <a class="nav-link" href="humidity.html" data-ga-category="Navigation"
-                            data-ga-action="Resources" data-ga-label="OpenCollective" rel="noopener"
-                            target="_blank">Humidity
-                        </a>
-                    </li>
-
-                    <li class="dropdown-item">
-                        <a class="nav-link" href="cloudiness.html" data-ga-category="Navigation"
-                            data-ga-action="Resources" data-ga-label="Bootstrap" rel="noopener nofollow"
-                            target="_blank">Cloudiness
-                        </a>
-                    </li>
-
-                    <li class="dropdown-item">
-                        <a class="nav-link" href="wind_speed.html" data-ga-category="Navigation"
-                            data-ga-action="Resources" data-ga-label="Expo" rel="noopener nofollow" target="_blank">Wind
-                            Speed
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</nav>
-<main>
-    <section class="container" id="main-bio">
-        <div class="jumbotron text-center">
-            <h1 class="display-5">Temperature Analysis</h1>
-            <h3 class="display-5">Summary: Latitude vs. X</h3>
-            <p class="lead">The purpose of this project was to analyze how weather changes as depending on the
-                latitude. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble
-                a dataset on over 500 cities.</p>
-            <a href="max_temp.html">    
-                <img src="city_latitude_vs_temp.png">
-            </a>
-            <p class="lead"> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
-                latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site
-                provides the source data and visualizations created as part of the analysis, as well as explanations and
-                decriptions of any trends and correlations witnessed.</p>
-        </div>
-    </section>
-
-    <aside id="contact-info">
-        <div class="card mb-3">
-            <h3 class="card-header">Visualizations</h3>
-            <div class="card-body">
-              <h5 class="card-title">These are the graphs that were created from the data set.</h5>
-              <h6 class="card-subtitle text-muted">Click on the graph to open it.</h6> 
-             </div>   
-            <ul class="list-group list-group-flush">
-                
-                <li class="list-group-item">Latitude vs. Max Temperature</li>
-                
-                <li class="list-group-item">
-                    <a href="max_temp.html">
-                        <img src="city_latitude_vs_temp.png" width="50%" height="50%">
-                    </a>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
                 </li>
-
-                <li class="list-group-item">Latitude vs. Cloudiness</li>
-
-                <li class="list-group-item">
-                    <a href="cloudiness.html">
-                        <img src="city_latitude_vs_cloudiness.png" width="50%" height="50%">
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownRight" href="#"
+                        data-toggle="dropdown" role="button"  aria-expanded="false">Plots</a>
 
-                <li class="list-group-item">Latitude vs. Humidity</li>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownRight">
 
-                <li class="list-group-item">
-                    <a href="humidity.html">
-                        <img src="city_latitude_vs_humidity.png" width="50%" height="50%">
-                    </a>
+                        <li class="dropdown-item">
+                            <a class="nav-link" href="max_temp.html">
+                                Max Temperature
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a class="nav-link" href="humidity.html">
+                                Humidity
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a class="nav-link" href="cloudiness.html">
+                                Cloudiness
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a class="nav-link" href="wind_speed.html">
+                                Wind Speed
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-
-                <li class="list-group-item">Latitude vs. Wind Speed</li>
-
-                <li class="list-group-item">
-                    <a href="wind_speed.html">
-                        <img src="city_latitude_vs_wind_speed.png" width="50%" height="50%">
-                    </a>
-                </li>
-              
             </ul>
-          </div>
-    </aside>
-</main>
+        </div>
+    </nav>
+    <main>
+        <section class="container" id="main-bio">
+            <div class="jumbotron text-center">
+                <h1 class="display-5">Temperature Analysis</h1>
+                <hr>
+                <h3 class="display-5">Summary: Latitude vs. X</h3>
+                <p class="lead" style="color: black;">The purpose of this project was to analyze how weather changes as depending on the
+                    latitude. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble
+                    a dataset on over 500 cities.</p>
+                <a href="max_temp.html">    
+                    <img src="Resources/city_latitude_vs_temp.png">
+                </a>
+                <p class="lead" style="color: black;"> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
+                    latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site
+                    provides the source data and visualizations created as part of the analysis, as well as explanations and
+                    decriptions of any trends and correlations witnessed.</p>
+            </div>
+        </section>
+
+        <aside id="vis">
+            <div class="card mb-3">
+                <h3 class="card-header">Visualizations</h3>
+                <div class="card-body">
+                <h5 class="card-title">These are the graphs that were created from the data set.</h5>
+                <h6 class="card-subtitle text-muted">Click on the graph to get an in-depth analysis.</h6> 
+                </div>   
+                <ul class="list-group list-group-flush">
+                    
+                    <li class="list-group-item">Latitude vs. Max Temperature</li>
+                    
+                    <li class="list-group-item">
+                        <a href="max_temp.html">
+                            <img src="Resources/city_latitude_vs_temp.png">
+                        </a>
+                    </li>
+
+                    <li class="list-group-item">Latitude vs. Cloudiness</li>
+
+                    <li class="list-group-item">
+                        <a href="cloudiness.html">
+                            <img src="Resources/city_latitude_vs_cloudiness.png">
+                        </a>
+                    </li>
+
+                    <li class="list-group-item">Latitude vs. Humidity</li>
+
+                    <li class="list-group-item">
+                        <a href="humidity.html">
+                            <img src="Resources/city_latitude_vs_humidity.png">
+                        </a>
+                    </li>
+
+                    <li class="list-group-item">Latitude vs. Wind Speed</li>
+
+                    <li class="list-group-item">
+                        <a href="wind_speed.html">
+                            <img src="Resources/city_latitude_vs_wind_speed.png">
+                        </a>
+                    </li>
+                
+                </ul>
+            </div>
+        </aside>
+    </main>
 </body>
