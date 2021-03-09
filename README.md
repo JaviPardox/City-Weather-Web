@@ -3,6 +3,7 @@
 The goal of this project is to create an simple but attractive HTML/CSS interface with the results of data gathered from the Open Weather API. 
 The code consists of 7 HTML files.
 The styling is done through Bootswath's Litera theme plus some customization from my part.
+
 ----------------
 
 The general layout consists of:
