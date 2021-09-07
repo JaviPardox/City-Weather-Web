@@ -1,4 +1,4 @@
-# Web Design Challenge
+# City weather website
 
 The goal of this project is to create a simple but attractive HTML/CSS interface with the results of data gathered from the Open Weather API. 
 The code consists of 7 HTML files.
